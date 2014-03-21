@@ -1,0 +1,18 @@
+@import "config";
+
+body > header {
+    border-bottom: 1px solid $color-accent1;
+    
+    margin: 0 auto;
+
+    height: ($header-image-height + 1 + px);
+    width: ($site-width + px);
+
+    position: relative;
+
+    #control-panel {
+        position: absolute;
+        top: 2px;
+        right: 0px;
+    }
+}

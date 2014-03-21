@@ -1,0 +1,18 @@
+@import "config";
+@import "mixins";
+
+.hidden { display: none; }
+
+/** Form Elements **/
+.form-element {
+    &.input {
+        input {
+            @include border-radius(3px);
+            border: 1px solid $color-accent2;
+
+            &:focus {
+                border: 1px solid $color-accent1;
+            }
+        }
+    }
+}
