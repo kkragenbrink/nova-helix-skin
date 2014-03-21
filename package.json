@@ -1,0 +1,23 @@
+{
+  "name": "nova-helix-skin",
+  "version": "0.0.1",
+  "description": "An HTML5 skin for Nova.",
+  "dependencies": {
+    "node-sass": "~0.8.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kkragenbrink/nova-helix-skin.git"
+  },
+  "keywords": [
+    "nova",
+    "anodyne",
+    "skin"
+  ],
+  "author": "Kevin Kragenbrink <kevin@writh.net>",
+  "license": "CC-BY-NC",
+  "bugs": {
+    "url": "https://github.com/kkragenbrink/nova-helix-skin/issues"
+  }
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+var sass = require('node-sass');
+var fs = require('fs');
+
+sass.render({
+    includePaths: ['scss/'],
+    ouputStyle: 'compressed',
+    file: 'scss/screen.scss',
+    success: function (data) {
+        fs.writeFile('css/screen.css', data);
+    },
+    error: console.error
+});
