@@ -7,7 +7,16 @@ sass.render({
     ouputStyle: 'compressed',
     file: 'scss/screen.scss',
     success: function (data) {
-        fs.writeFile('css/screen.css', data);
+        fs.readFile('css/screen.css', function (err, current) {
+            if (data != current) {
+                fs.writeFile('css/screen.css', data, function (err) {
+                    console.log('%d lines saved.', data.split('\n').length);
+                });
+            }
+            else {
+                console.log('No change.');
+            }
+        });
     },
     error: console.error
 });
