@@ -37,7 +37,7 @@ $login_button = array(
 
     <meta name="description" content="<?php echo $this->config->item('meta_desc'); ?>" />
     <meta name="description" content="<?php echo $this->config->item('meta_keywords'); ?>" />
-   <meta name="description" content="<?php echo $this->config->item('meta_author'); ?>" />
+    <meta name="description" content="<?php echo $this->config->item('meta_author'); ?>" />
 
     <?php echo $_redirect; ?>
 
