@@ -15,4 +15,18 @@
             }
         }
     }
+
+    &.button {
+        button {
+            @include button(simple, $color-accent2);
+            font-size: golden-ratio($font-size, -1);
+            padding: 2px 8px;
+
+            &:hover {
+                @include button(simple, $color-accent1);
+                font-size: golden-ratio($font-size, -1);
+                padding: 2px 8px;
+            }
+        }
+    }
 }
