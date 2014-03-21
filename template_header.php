@@ -97,6 +97,8 @@ $login_button = array(
             <?php endif; ?>
             </section>
         </section>
+        
+        <nav id="navigation"><?php echo $nav_main; ?></nav>
     </div>
 </header>
 

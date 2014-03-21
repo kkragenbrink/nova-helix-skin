@@ -2,22 +2,17 @@
  * Modify the following options to suit
  * the needs of your own site.
  ***************************************/
- @import "bourbon/bourbon";
-
 $background-image: '/application/views/helix/img/header.jpg';
 
-$color-background: #100;
-$color-foreground: #BAA;
-
-$color-accent1: #D00; // Base accent color
-$color-accent1a: #900; // Darker base accent color
-$color-accent1b: #500; // Darkest base accent color
-$color-accent2: #999; // Secondary accent color
-$color-accent2a: #666; // Darker secondary accent color
-$color-accent2b: #333; // Darkest secondary accent color
+$color-background: #151000;
+$color-foreground: #B94;
+$color-accent1: #751;
+$color-accent2: #999;
+$color-header1: #B94;
 
 $font-family-normal: $lucida-grande;
-$font-size: 14pt;
+$font-size: 12pt;
+$font-ratio: 1.067;
 
 $header-image-height: 180;
 

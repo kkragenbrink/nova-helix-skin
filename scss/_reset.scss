@@ -1,17 +1,15 @@
 @import "meyerweb/reset";
-@import "config";
+@import url('//fonts.googleapis.com/css?family=EB+Garamond');
 
 *, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -o-boxsizing: border-box;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 body {
     background-color: $color-background;
     color: $color-foreground;
     font-family: $font-family-normal;
+    line-height: modular-scale($font-size, 2, $font-ratio);
 }
 
 a {

@@ -14,16 +14,19 @@ body > header {
         position: relative;
 
         #control-panel {
-            position: absolute;
-            top: 10px;
-            right: 0px;
+            @include position(absolute, 10px 0px 0 0);
 
             .form-element {
                 display: inline-block;
-                font-size: golden-ratio($font-size, -1);
+                font-size: modular-scale($font-size, -4, $font-ratio);
+                @include text-outline($color-accent2);
+
+                &.checkbox {
+                    width: 155px;
+                }
 
                 &.input {
-                    width: 155px;
+                    @extend .checkbox;
 
                     label {
                         display: block;
@@ -32,6 +35,51 @@ body > header {
 
                 &.button button {
 
+                }
+            }
+        }
+        
+        #navigation {
+            @include position(absolute, 0 0 -1px 0);
+            
+            li {
+                display: inline-block;
+                margin: 0 4px;
+                
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                a {
+                    border: 1px solid transparent;
+                    border-bottom: 1px solid $color-accent1;
+                    @include border-top-radius(4px);
+                    color: tint($color-accent2, 50%);
+                    color: $color-accent2;
+                    display: block;
+                    padding: 8px 30px;
+                    font-size: modular-scale($font-size, 1, $font-ratio);
+                    font-variant: small-caps;
+                    font-weight: bold;
+                    @include text-outline($color-accent2);
+                    
+                    &.active {
+                        @include linear-gradient(tint($color-background, 25%), tint($color-background, 10%));
+                        border: 1px solid $color-accent1;
+                        border-bottom: 1px solid tint($color-background, 10%);
+                        color: $color-header1;
+                        
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    
+                    &:hover:not(.active) {
+                        text-decoration: none;
+                        @include linear-gradient(shade($color-accent1, 50%), $color-accent1);
+                        color: tint($color-accent2, 90%);
+                        border-bottom: 1px solid $color-accent1;
+                    }
                 }
             }
         }

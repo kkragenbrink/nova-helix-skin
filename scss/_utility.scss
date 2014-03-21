@@ -1,6 +1,3 @@
-@import "config";
-@import "mixins";
-
 .hidden { display: none; }
 
 /** Form Elements **/
@@ -19,14 +16,15 @@
     &.button {
         button {
             @include button(simple, $color-accent2);
-            font-size: golden-ratio($font-size, -1);
             padding: 2px 8px;
+            @include text-outline($color-accent2);
 
             &:hover {
                 @include button(simple, $color-accent1);
-                font-size: golden-ratio($font-size, -1);
                 padding: 2px 8px;
             }
         }
     }
 }
+
+.clearfix { @include clearfix; }

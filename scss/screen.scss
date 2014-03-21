@@ -1,7 +1,12 @@
-@import url('//fonts.googleapis.com/css?family=EB+Garamond');
-
+@import "bourbon/bourbon";
+@import "config";
 @import "reset";
+
+@import "mixins";
 @import "utility";
 @import "compatibility";
 
 @import "header";
+@import "subnavigation";
+@import "main";
+@import "footer";

@@ -1,8 +1,13 @@
-@import 'bourbon/bourbon';
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+}
+
+@mixin text-outline($color) {
+    text-shadow: 1px 1px 0 shade($color, 90%),
+        -1px -1px 0 shade($color, 90%),
+        1px -1px 0 shade($color, 90%),
+        -1px 1px 0 shade($color, 90%);
 }
