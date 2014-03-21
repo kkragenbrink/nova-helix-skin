@@ -1,0 +1,241 @@
+/***************************************
+ * Modify the following options to suit
+ * the needs of your own site.
+ ***************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@import url('//fonts.googleapis.com/css?family=EB+Garamond');
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #151000;
+  color: #B94;
+  font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  line-height: 13.66187pt; }
+
+a {
+  color: #751;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.hidden {
+  display: none; }
+
+/** Form Elements **/
+.form-element.input input {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #999; }
+  .form-element.input input:focus {
+    border: 1px solid #751; }
+.form-element.button button {
+  border: 1px solid #757575;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #bfbfbf;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #999;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999), color-stop(100%, #7d7d7d));
+  background-image: -webkit-linear-gradient(#999, #7d7d7d);
+  background-image: linear-gradient(#999, #7d7d7d);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #6b6b6b;
+  background-clip: padding-box;
+  padding: 2px 8px;
+  text-shadow: 1px 1px 0 #0f0f0f, -1px -1px 0 #0f0f0f, 1px -1px 0 #0f0f0f, -1px 1px 0 #0f0f0f; }
+  .form-element.button button:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #a6a6a6;
+    cursor: pointer;
+    background-color: #8c8c8c;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8c8c8c), color-stop(100%, #757575));
+    background-image: -webkit-linear-gradient(#8c8c8c, #757575);
+    background-image: linear-gradient(#8c8c8c, #757575); }
+  .form-element.button button:active:not(:disabled) {
+    border: 1px solid #757575;
+    box-shadow: inset 0 0 8px 4px #6e6e6e, inset 0 0 8px 4px #6e6e6e, 0 1px 1px 0 #eee; }
+  .form-element.button button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+  .form-element.button button:hover {
+    border: 1px solid #3b2805;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #b18023;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #751;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #751), color-stop(100%, #4a3206));
+    background-image: -webkit-linear-gradient(#751, #4a3206);
+    background-image: linear-gradient(#751, #4a3206);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2a1c02;
+    background-clip: padding-box;
+    padding: 2px 8px; }
+    .form-element.button button:hover:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 #88611a;
+      cursor: pointer;
+      background-color: #5e4310;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5e4310), color-stop(100%, #3b2805));
+      background-image: -webkit-linear-gradient(#5e4310, #3b2805);
+      background-image: linear-gradient(#5e4310, #3b2805); }
+    .form-element.button button:hover:active:not(:disabled) {
+      border: 1px solid #3b2805;
+      box-shadow: inset 0 0 8px 4px #2d1f04, inset 0 0 8px 4px #2d1f04, 0 1px 1px 0 #eee; }
+    .form-element.button button:hover:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+#skip-ahead {
+  display: none; }
+
+/***************************************
+ * Modify the following options to suit
+ * the needs of your own site.
+ ***************************************/
+body > header {
+  background: url('/application/views/helix/img/header.jpg') no-repeat center;
+  border-bottom: 1px solid #751; }
+  body > header div {
+    margin: 0 auto;
+    height: 181px;
+    width: 1150px;
+    position: relative; }
+    body > header div #control-panel {
+      position: absolute;
+      top: 10px;
+      right: 0px; }
+      body > header div #control-panel .form-element {
+        display: inline-block;
+        font-size: 9.25814pt;
+        text-shadow: 1px 1px 0 #0f0f0f, -1px -1px 0 #0f0f0f, 1px -1px 0 #0f0f0f, -1px 1px 0 #0f0f0f; }
+        body > header div #control-panel .form-element.checkbox, body > header div #control-panel body > header div #control-panel .form-element.input, body > header div #control-panel body > header div #control-panel .form-element.input {
+          width: 155px; }
+        body > header div #control-panel .form-element.input label {
+          display: block; }
+    body > header div #navigation {
+      position: absolute;
+      bottom: -1px; }
+      body > header div #navigation li {
+        display: inline-block;
+        margin: 0 4px; }
+        body > header div #navigation li:first-child {
+          margin-left: 0; }
+        body > header div #navigation li a {
+          border: 1px solid transparent;
+          border-bottom: 1px solid #751;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          color: #cccccc;
+          color: #999;
+          display: block;
+          padding: 8px 30px;
+          font-size: 12.804pt;
+          font-variant: small-caps;
+          font-weight: bold;
+          text-shadow: 1px 1px 0 #0f0f0f, -1px -1px 0 #0f0f0f, 1px -1px 0 #0f0f0f, -1px 1px 0 #0f0f0f; }
+          body > header div #navigation li a.active {
+            background-color: #4f4b3f;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4f4b3f), color-stop(100%, #2c2719));
+            background-image: -webkit-linear-gradient(#4f4b3f, #2c2719);
+            background-image: linear-gradient(#4f4b3f, #2c2719);
+            border: 1px solid #751;
+            border-bottom: 1px solid #2c2719;
+            color: #B94; }
+            body > header div #navigation li a.active:hover {
+              text-decoration: none; }
+          body > header div #navigation li a:hover:not(.active) {
+            text-decoration: none;
+            background-color: #3b2a08;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b2a08), color-stop(100%, #751));
+            background-image: -webkit-linear-gradient(#3b2a08, #751);
+            background-image: linear-gradient(#3b2a08, #751);
+            color: #f4f4f4;
+            border-bottom: 1px solid #751; }
+
+#subnavigation {
+  float: right;
+  padding: 20px;
+  width: 230px;
+  *zoom: 1; }
+  #subnavigation:before, #subnavigation:after {
+    content: " ";
+    display: table; }
+  #subnavigation:after {
+    clear: both; }
+
+#viewpane {
+  background: #201b0c;
+  border: 1px solid #751;
+  border-top: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+  margin: 0 auto;
+  width: 1150px; }
+  #viewpane main {
+    background: #2c2719;
+    border: 1px solid #751;
+    border-top: none;
+    border-left: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: block;
+    padding: 20px;
+    width: 920px; }
+
+footer {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 8.67679pt;
+  text-align: center;
+  width: 1150px; }
