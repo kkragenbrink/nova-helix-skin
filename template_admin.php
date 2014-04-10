@@ -1,4 +1,4 @@
-<?php include('template_header.php'); ?>
+<?php include('tpl/header.php'); ?>
 <section id="viewpane">
     <nav id="subnavigation">
     	<?php echo $nav_sub;?>
@@ -11,7 +11,7 @@
         <div class="clearfix"></div>
     </main>
 
-    <?php include('template_footer.php'); ?>
+    <?php include('tpl/footer.php'); ?>
 </section>
 </body>
 

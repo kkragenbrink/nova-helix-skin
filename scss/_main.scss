@@ -1,0 +1,20 @@
+#viewpane {
+    background: tint($color-background, 5%);
+    border: 1px solid $color-accent1;
+    border-top: none;
+    @include border-bottom-radius(4px);
+    position: relative;
+    margin: 0 auto;
+    width: ($site-width + px);
+    
+    main {
+        background: tint($color-background, 10%);
+        border: 1px solid $color-accent1;
+        border-top: none;
+        border-left: none;
+        @include border-bottom-radius(4px);
+        display: block;
+        padding: 20px;
+        width: ($site-width * .8 + px);
+    }
+}

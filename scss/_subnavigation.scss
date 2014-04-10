@@ -1,0 +1,7 @@
+#subnavigation {
+    float: right;
+    padding: 20px;
+    width: ($site-width * .2 + px);
+    
+    @include clearfix;
+}

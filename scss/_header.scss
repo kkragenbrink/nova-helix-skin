@@ -1,6 +1,3 @@
-@import "config";
-@import "mixins";
-
 body > header {
     background: url($background-image) no-repeat center;
     border-bottom: 1px solid $color-accent1;
@@ -12,32 +9,6 @@ body > header {
         width: ($site-width + px);
 
         position: relative;
-
-        #control-panel {
-            @include position(absolute, 10px 0px 0 0);
-
-            .form-element {
-                display: inline-block;
-                font-size: modular-scale($font-size, -4, $font-ratio);
-                @include text-outline($color-accent2);
-
-                &.checkbox {
-                    width: 155px;
-                }
-
-                &.input {
-                    @extend .checkbox;
-
-                    label {
-                        display: block;
-                    }
-                }
-
-                &.button button {
-
-                }
-            }
-        }
         
         #navigation {
             @include position(absolute, 0 0 -1px 0);

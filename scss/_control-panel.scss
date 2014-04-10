@@ -1,0 +1,36 @@
+#control-panel {
+    @include position(absolute, 10px 0px 0 0);
+    
+    .action {
+        margin-right: 2px;
+    }
+    
+    .logout {
+        color: tint($color-accent2, 75%);;
+        font-weight: bold;
+        font-size: modular-scale($font-size, -1, $font-ratio);
+        margin-left: 20px;
+    }
+
+    .form-element {
+        display: inline-block;
+        font-size: modular-scale($font-size, -4, $font-ratio);
+        @include text-outline($color-accent2);
+
+        &.checkbox {
+            width: 155px;
+        }
+
+        &.input {
+            @extend .checkbox;
+
+            label {
+                display: block;
+            }
+        }
+
+        &.button button {
+
+        }
+    }
+}
