@@ -1,7 +1,35 @@
 #subnavigation {
     float: right;
-    padding: 20px;
+    padding-top: 10px;
     width: ($site-width * .2 + px);
+
+    font-size: modular-scale($font-size, -2, $font-ratio);
+    font-weight: bold;
+    text-align: right;
     
     @include clearfix;
+
+    .menu_category { 
+        color: $color-accent1; 
+        padding: 0 20px;
+    }
+
+    li + li.menu_category {
+        margin-top: 20px;
+    }
+
+    a {
+        border: transparent 1px solid;
+        color: $color-accent2;
+        display: inline-block;
+        padding: 5px 20px;
+        width: 100%;
+
+        &:hover {
+            background: tint($color-background, 10%);
+            border-bottom: $color-accent1 1px solid;
+            border-top: $color-accent1 1px solid;
+            text-decoration: none;
+        }
+    }
 }

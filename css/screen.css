@@ -170,13 +170,13 @@ body > header {
           border-bottom: 1px solid #751;
           border-top-left-radius: 4px;
           border-top-right-radius: 4px;
-          color: #cccccc;
-          color: #999;
+          color: #c1c1c1;
           display: block;
           padding: 8px 30px;
-          font-size: 12.804pt;
+          font-size: 13.66187pt;
           font-variant: small-caps;
           font-weight: bold;
+          letter-spacing: 1px;
           text-shadow: 1px 1px 0 #0f0f0f, -1px -1px 0 #0f0f0f, 1px -1px 0 #0f0f0f, -1px 1px 0 #0f0f0f; }
           body > header div #navigation li a.active {
             background-color: #4f4b3f;
@@ -219,14 +219,33 @@ body > header {
 
 #subnavigation {
   float: right;
-  padding: 20px;
+  padding-top: 10px;
   width: 230px;
+  font-size: 10.54029pt;
+  font-weight: bold;
+  text-align: right;
   *zoom: 1; }
   #subnavigation:before, #subnavigation:after {
     content: " ";
     display: table; }
   #subnavigation:after {
     clear: both; }
+  #subnavigation .menu_category {
+    color: #751;
+    padding: 0 20px; }
+  #subnavigation li + li.menu_category {
+    margin-top: 20px; }
+  #subnavigation a {
+    border: transparent 1px solid;
+    color: #999;
+    display: inline-block;
+    padding: 5px 20px;
+    width: 100%; }
+    #subnavigation a:hover {
+      background: #2c2719;
+      border-bottom: #751 1px solid;
+      border-top: #751 1px solid;
+      text-decoration: none; }
 
 #viewpane {
   background: #201b0c;
